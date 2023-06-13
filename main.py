@@ -13,6 +13,7 @@ class Menu:
 
     def choixUser(self, choix):
         if choix == "1":
+            chargerVilles()
             chargerClient()
             client1.newUser()
         if choix == "2":
