@@ -26,6 +26,9 @@ class Client:
         client = Client(self.nom, self.prenom, self.ville)
 
         print("le client: ",  client.nom, client.prenom, client.ville, " à bien été créé")
+        client = self.nom + "#" + self.prenom +"#" + self.ville
+
+        Client.listeClients.append(client)
 
         Client.nbrClient += 1
 
